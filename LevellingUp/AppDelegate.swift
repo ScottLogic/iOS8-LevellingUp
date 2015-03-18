@@ -14,6 +14,8 @@
 // limitations under the License.
 //
 
+let userNotificationSettingsKey = "UserNotificationSettingsDidChange"
+
 
 import UIKit
 
@@ -40,6 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       }
     }
     return false
+  }
+  
+  // MARK: - Notification Settings
+  func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+    NSNotificationCenter.defaultCenter().postNotificationName(userNotificationSettingsKey, object: self)
   }
   
 }

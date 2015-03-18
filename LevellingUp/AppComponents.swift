@@ -39,12 +39,12 @@ struct AppComponent {
   
   init(name: String, category: AppComponentCategory, vcIdentifier: String) {
     let type = AppComponentType.Storyboard(vcIdentifier)
-    init(name: name, category: category, type: type)
+    self.init(name: name, category: category, type: type)
   }
   
   init(name: String, category: AppComponentCategory, vcInstantiation: (UIStoryboard?) -> UIViewController?) {
     let type = AppComponentType.Code(vcInstantiation)
-    init(name: name, category: category, type: type)
+    self.init(name: name, category: category, type: type)
   }
 }
 
@@ -52,7 +52,7 @@ struct AppComponent {
 
 extension AppComponent {
   static func appStructure() -> [AppComponent] {
-    let component = AppComponent(name: "hi", category: .Fix, vcIdentifier: "DetailVC")
+    let component = AppComponent(name: "Notification Authorisation", category: .Fix, vcIdentifier: "NotificationAuthorisationVC")
     return [ component ]
   }
 }

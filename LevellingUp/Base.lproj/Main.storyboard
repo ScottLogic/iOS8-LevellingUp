@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7525" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7516"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -19,24 +20,6 @@
             </objects>
             <point key="canvasLocation" x="-38" y="-630"/>
         </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="ZnJ-5x-s8O">
-            <objects>
-                <viewController storyboardIdentifier="DetailVC" id="W0S-ib-5Xd" customClass="DetailViewController" customModule="LevellingUp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SPd-Di-JIN"/>
-                        <viewControllerLayoutGuide type="bottom" id="jIb-wS-h3t"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0m0-8P-Sux">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UcG-h7-9ab" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-38" y="214"/>
-        </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
@@ -48,7 +31,99 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-856" y="-330"/>
+            <point key="canvasLocation" x="-724" y="-630"/>
+        </scene>
+        <!--Notification Authorisation View Controller-->
+        <scene sceneID="Oyg-tN-0JN">
+            <objects>
+                <viewController storyboardIdentifier="NotificationAuthorisationVC" id="ef4-nf-1SE" customClass="NotificationAuthorisationViewController" customModule="LevellingUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="awO-l3-u5V"/>
+                        <viewControllerLayoutGuide type="bottom" id="WvY-AY-RKc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rom-WE-Qut">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKS-yt-dKV">
+                                <rect key="frame" x="16" y="92" width="568" height="417"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification Authorisation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-gm-DpD">
+                                        <rect key="frame" x="8" y="8" width="552" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="badges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfv-60-T7i">
+                                        <rect key="frame" x="8" y="114" width="552" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.16413840379392952" blue="0.12800307952991097" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa0-EW-m0a">
+                                        <rect key="frame" x="8" y="157" width="552" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.1641384038" blue="0.12800307950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alerts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTE-Et-UWP">
+                                        <rect key="frame" x="8" y="200" width="552" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.1641384038" blue="0.12800307950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34R-4S-IT3">
+                                        <rect key="frame" x="239" y="275" width="90" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                        <state key="normal" title="Request">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleRequestAction:" destination="ef4-nf-1SE" eventType="touchUpInside" id="9F2-TO-n2B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.76248444940000004" green="0.90933659909999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DTE-Et-UWP" firstAttribute="top" secondItem="Wa0-EW-m0a" secondAttribute="bottom" constant="8" id="1iM-ZU-CBF"/>
+                                    <constraint firstItem="Rfv-60-T7i" firstAttribute="leading" secondItem="Wa0-EW-m0a" secondAttribute="leading" id="1nq-Yd-C6n"/>
+                                    <constraint firstItem="34R-4S-IT3" firstAttribute="top" secondItem="DTE-Et-UWP" secondAttribute="bottom" constant="40" id="1vE-Vt-egl"/>
+                                    <constraint firstItem="Wa0-EW-m0a" firstAttribute="top" secondItem="Rfv-60-T7i" secondAttribute="bottom" constant="8" id="4cR-8P-gEB"/>
+                                    <constraint firstItem="Rfv-60-T7i" firstAttribute="trailing" secondItem="DTE-Et-UWP" secondAttribute="trailing" id="FWc-iF-z3A"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Rfv-60-T7i" secondAttribute="trailing" id="GCq-6f-tCV"/>
+                                    <constraint firstAttribute="centerX" secondItem="34R-4S-IT3" secondAttribute="centerX" id="Nz4-SX-kKI"/>
+                                    <constraint firstItem="Rfv-60-T7i" firstAttribute="trailing" secondItem="Wa0-EW-m0a" secondAttribute="trailing" id="ST0-8D-ei2"/>
+                                    <constraint firstItem="Rfv-60-T7i" firstAttribute="top" secondItem="nMg-gm-DpD" secondAttribute="bottom" constant="35" id="aqf-m6-f4x"/>
+                                    <constraint firstItem="Rfv-60-T7i" firstAttribute="leading" secondItem="DTE-Et-UWP" secondAttribute="leading" id="emF-cI-bjF"/>
+                                    <constraint firstItem="nMg-gm-DpD" firstAttribute="leading" secondItem="zKS-yt-dKV" secondAttribute="leadingMargin" id="ms3-8J-hJT"/>
+                                    <constraint firstItem="nMg-gm-DpD" firstAttribute="top" secondItem="zKS-yt-dKV" secondAttribute="topMargin" id="yrw-Fp-aDC"/>
+                                    <constraint firstItem="Rfv-60-T7i" firstAttribute="leading" secondItem="zKS-yt-dKV" secondAttribute="leadingMargin" id="zAS-ti-2r6"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="nMg-gm-DpD" secondAttribute="trailing" id="zUC-PJ-MVq"/>
+                                    <constraint firstAttribute="bottom" secondItem="34R-4S-IT3" secondAttribute="bottom" constant="100" id="zze-7Y-P4A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zKS-yt-dKV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rom-WE-Qut" secondAttribute="leadingMargin" id="JU3-gr-DsY"/>
+                            <constraint firstAttribute="centerY" secondItem="zKS-yt-dKV" secondAttribute="centerY" id="T99-bs-L19"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="zKS-yt-dKV" secondAttribute="trailing" id="X1k-sQ-niA"/>
+                            <constraint firstAttribute="centerX" secondItem="zKS-yt-dKV" secondAttribute="centerX" id="rqH-wA-dnb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertsLabel" destination="DTE-Et-UWP" id="jng-jk-yNh"/>
+                        <outlet property="badgesLabel" destination="Rfv-60-T7i" id="fmr-UV-PbJ"/>
+                        <outlet property="soundsLabel" destination="Wa0-EW-m0a" id="rwb-4R-Sck"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1t6-Wb-gaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-724" y="280"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
@@ -88,7 +163,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="-630"/>
+            <point key="canvasLocation" x="647" y="-630"/>
         </scene>
     </scenes>
 </document>

@@ -15,6 +15,7 @@
 		2279CB901AB86E460009140F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2279CB8E1AB86E460009140F /* LaunchScreen.xib */; };
 		2279CB9C1AB86E460009140F /* LevellingUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CB9B1AB86E460009140F /* LevellingUpTests.swift */; };
 		2279CBA71AB8CD3E0009140F /* AppComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBA61AB8CD3E0009140F /* AppComponents.swift */; };
+		2279CBAA1AB9CE1F0009140F /* NotificationAuthorisationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBA91AB9CE1F0009140F /* NotificationAuthorisationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		2279CB9A1AB86E460009140F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2279CB9B1AB86E460009140F /* LevellingUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevellingUpTests.swift; sourceTree = "<group>"; };
 		2279CBA61AB8CD3E0009140F /* AppComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponents.swift; sourceTree = "<group>"; };
+		2279CBA91AB9CE1F0009140F /* NotificationAuthorisationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAuthorisationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		2279CB801AB86E460009140F /* LevellingUp */ = {
 			isa = PBXGroup;
 			children = (
+				2279CBA81AB9CDF50009140F /* Fixes */,
 				2279CBA51AB8CD070009140F /* Data */,
 				2279CB831AB86E460009140F /* AppDelegate.swift */,
 				2279CB851AB86E460009140F /* MasterViewController.swift */,
@@ -124,6 +127,14 @@
 				2279CBA61AB8CD3E0009140F /* AppComponents.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		2279CBA81AB9CDF50009140F /* Fixes */ = {
+			isa = PBXGroup;
+			children = (
+				2279CBA91AB9CE1F0009140F /* NotificationAuthorisationViewController.swift */,
+			);
+			name = Fixes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2279CB881AB86E460009140F /* DetailViewController.swift in Sources */,
+				2279CBAA1AB9CE1F0009140F /* NotificationAuthorisationViewController.swift in Sources */,
 				2279CBA71AB8CD3E0009140F /* AppComponents.swift in Sources */,
 				2279CB861AB86E460009140F /* MasterViewController.swift in Sources */,
 				2279CB841AB86E460009140F /* AppDelegate.swift in Sources */,
