@@ -50,6 +50,11 @@ class NotificationAuthorisationViewController: UIViewController {
     requestNotificationsForTypes(requestedTypes)
   }
   
+  @IBAction func handleJumpToSettings(sender: AnyObject) {
+    let settingsUrl = NSURL(string: UIApplicationOpenSettingsURLString)
+    UIApplication.sharedApplication().openURL(settingsUrl!)
+  }
+  
   // MARK:- Utils
   func updateLabelsWithCurrentStatus() {
     let types = UIApplication.sharedApplication().currentUserNotificationSettings().types

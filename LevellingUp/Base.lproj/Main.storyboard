@@ -46,7 +46,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKS-yt-dKV">
-                                <rect key="frame" x="16" y="92" width="568" height="417"/>
+                                <rect key="frame" x="16" y="91" width="568" height="418"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification Authorisation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-gm-DpD">
                                         <rect key="frame" x="8" y="8" width="552" height="71"/>
@@ -76,14 +76,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34R-4S-IT3">
-                                        <rect key="frame" x="239" y="275" width="90" height="42"/>
+                                        <rect key="frame" x="244" y="275" width="81" height="42"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
-                                        <state key="normal" title="Request">
+                                        <state key="normal" title="request">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="handleRequestAction:" destination="ef4-nf-1SE" eventType="touchUpInside" id="9F2-TO-n2B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-pw-hND">
+                                        <rect key="frame" x="241" y="337" width="88" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="→settings">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleJumpToSettings:" destination="ef4-nf-1SE" eventType="touchUpInside" id="htT-tp-Rsh"/>
+                                            <action selector="handleRequestAction:" destination="ef4-nf-1SE" eventType="touchUpInside" id="db9-x0-nAF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,17 +105,19 @@
                                     <constraint firstItem="Rfv-60-T7i" firstAttribute="leading" secondItem="Wa0-EW-m0a" secondAttribute="leading" id="1nq-Yd-C6n"/>
                                     <constraint firstItem="34R-4S-IT3" firstAttribute="top" secondItem="DTE-Et-UWP" secondAttribute="bottom" constant="40" id="1vE-Vt-egl"/>
                                     <constraint firstItem="Wa0-EW-m0a" firstAttribute="top" secondItem="Rfv-60-T7i" secondAttribute="bottom" constant="8" id="4cR-8P-gEB"/>
+                                    <constraint firstItem="34R-4S-IT3" firstAttribute="centerX" secondItem="ZDk-pw-hND" secondAttribute="centerX" id="DB0-Hr-0D1"/>
                                     <constraint firstItem="Rfv-60-T7i" firstAttribute="trailing" secondItem="DTE-Et-UWP" secondAttribute="trailing" id="FWc-iF-z3A"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="Rfv-60-T7i" secondAttribute="trailing" id="GCq-6f-tCV"/>
                                     <constraint firstAttribute="centerX" secondItem="34R-4S-IT3" secondAttribute="centerX" id="Nz4-SX-kKI"/>
                                     <constraint firstItem="Rfv-60-T7i" firstAttribute="trailing" secondItem="Wa0-EW-m0a" secondAttribute="trailing" id="ST0-8D-ei2"/>
                                     <constraint firstItem="Rfv-60-T7i" firstAttribute="top" secondItem="nMg-gm-DpD" secondAttribute="bottom" constant="35" id="aqf-m6-f4x"/>
                                     <constraint firstItem="Rfv-60-T7i" firstAttribute="leading" secondItem="DTE-Et-UWP" secondAttribute="leading" id="emF-cI-bjF"/>
+                                    <constraint firstItem="ZDk-pw-hND" firstAttribute="top" secondItem="34R-4S-IT3" secondAttribute="bottom" constant="20" id="g5o-WK-yV3"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZDk-pw-hND" secondAttribute="bottom" constant="45" id="mI6-8G-dqe"/>
                                     <constraint firstItem="nMg-gm-DpD" firstAttribute="leading" secondItem="zKS-yt-dKV" secondAttribute="leadingMargin" id="ms3-8J-hJT"/>
                                     <constraint firstItem="nMg-gm-DpD" firstAttribute="top" secondItem="zKS-yt-dKV" secondAttribute="topMargin" id="yrw-Fp-aDC"/>
                                     <constraint firstItem="Rfv-60-T7i" firstAttribute="leading" secondItem="zKS-yt-dKV" secondAttribute="leadingMargin" id="zAS-ti-2r6"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="nMg-gm-DpD" secondAttribute="trailing" id="zUC-PJ-MVq"/>
-                                    <constraint firstAttribute="bottom" secondItem="34R-4S-IT3" secondAttribute="bottom" constant="100" id="zze-7Y-P4A"/>
                                 </constraints>
                             </view>
                         </subviews>
