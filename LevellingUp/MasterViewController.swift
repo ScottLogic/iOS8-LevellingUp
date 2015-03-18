@@ -64,6 +64,5 @@ class MasterViewController: UITableViewController {
     return cell
   }
 
-
 }
 

@@ -52,7 +52,9 @@ struct AppComponent {
 
 extension AppComponent {
   static func appStructure() -> [AppComponent] {
-    let component = AppComponent(name: "Notification Authorisation", category: .Fix, vcIdentifier: "NotificationAuthorisationVC")
-    return [ component ]
+    return [
+      AppComponent(name: "Notification Authorisation", category: .Fix, vcIdentifier: "NotificationAuthorisationVC"),
+      AppComponent(name: "Alert View", category: .Fix, vcIdentifier: "AlertsViewVC")
+    ]
   }
 }
