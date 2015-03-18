@@ -28,6 +28,9 @@ class NotificationAuthorisationViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    title = "Notification Authorisation"
+    
+    // Register to get updates on notification authorisation status
     NSNotificationCenter.defaultCenter().addObserver(self,
       selector: "updateLabelsWithCurrentStatus",
       name: userNotificationSettingsKey,
