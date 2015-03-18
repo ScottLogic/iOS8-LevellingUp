@@ -45,17 +45,21 @@ class MasterViewController: UITableViewController {
 
   // MARK: - Table View
   override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return 1
+    return AppComponentCategory.allValues.count
+  }
+  
+  override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    return AppComponentCategory.allValues[section].rawValue
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return appStructure.count
+    return appStructure.filter({ $0.category == AppComponentCategory.allValues[section] }).count
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
-    let component = appStructure[indexPath.row]
+    let component = appStructure.filter({ $0.category == AppComponentCategory.allValues[indexPath.section] })[indexPath.row]
     cell.textLabel!.text = component.name
     return cell
   }

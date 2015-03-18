@@ -16,9 +16,11 @@
 
 import UIKit
 
-enum AppComponentCategory {
-  case Fix
-  case NewFeature
+enum AppComponentCategory: String {
+  case Fix = "Breaking Changes"
+  case NewFeature = "New Features"
+  
+  static let allValues = [ Fix, NewFeature ]
 }
 
 enum AppComponentType {
@@ -47,8 +49,6 @@ struct AppComponent {
     self.init(name: name, category: category, type: type)
   }
 }
-
-
 
 extension AppComponent {
   static func appStructure() -> [AppComponent] {
