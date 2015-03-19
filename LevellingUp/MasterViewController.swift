@@ -28,7 +28,7 @@ class MasterViewController: UITableViewController {
   
   // MARK: - Row Selection
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let component = appStructure[indexPath.row]
+    let component = componentsForCategoryIndex(indexPath.section)[indexPath.row]
     var newVC: UIViewController?
     
     switch component.type {
@@ -53,15 +53,25 @@ class MasterViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return appStructure.filter({ $0.category == AppComponentCategory.allValues[section] }).count
+    return componentsForCategoryIndex(section).count
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
-    let component = appStructure.filter({ $0.category == AppComponentCategory.allValues[indexPath.section] })[indexPath.row]
+    let component = componentsForCategoryIndex(indexPath.section)[indexPath.row]
     cell.textLabel!.text = component.name
     return cell
+  }
+  
+  // MARK: - Utilities
+  private func componentsForCategoryIndex(index: Int) -> [AppComponent] {
+    let category = AppComponentCategory.allValues[index]
+    return componentsForCategory(category)
+  }
+  
+  private func componentsForCategory(category: AppComponentCategory) -> [AppComponent] {
+    return appStructure.filter({ $0.category == category })
   }
 
 }

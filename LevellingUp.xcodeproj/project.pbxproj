@@ -20,6 +20,7 @@
 		2279CBB11ABAE5610009140F /* PopoverContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBB01ABAE5610009140F /* PopoverContentViewController.swift */; };
 		2279CBB31ABB33B90009140F /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBB21ABB33B90009140F /* ActionSheetViewController.swift */; };
 		2279CBB51ABB70430009140F /* CoreLocationAuthorisationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBB41ABB70430009140F /* CoreLocationAuthorisationViewController.swift */; };
+		22AAFF8A1ABB7E9100D71DEA /* NotificationActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		2279CBB01ABAE5610009140F /* PopoverContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverContentViewController.swift; sourceTree = "<group>"; };
 		2279CBB21ABB33B90009140F /* ActionSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
 		2279CBB41ABB70430009140F /* CoreLocationAuthorisationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationAuthorisationViewController.swift; sourceTree = "<group>"; };
+		22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationActionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		2279CB801AB86E460009140F /* LevellingUp */ = {
 			isa = PBXGroup;
 			children = (
+				22AAFF881ABB7E4400D71DEA /* New Stuff */,
 				2279CBA81AB9CDF50009140F /* Fixes */,
 				2279CBA51AB8CD070009140F /* Data */,
 				2279CB831AB86E460009140F /* AppDelegate.swift */,
@@ -155,6 +158,14 @@
 				2279CBB01ABAE5610009140F /* PopoverContentViewController.swift */,
 			);
 			name = Aux;
+			sourceTree = "<group>";
+		};
+		22AAFF881ABB7E4400D71DEA /* New Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */,
+			);
+			name = "New Stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				2279CBB51ABB70430009140F /* CoreLocationAuthorisationViewController.swift in Sources */,
 				2279CBAE1ABAC1CC0009140F /* PopoverViewController.swift in Sources */,
 				2279CB841AB86E460009140F /* AppDelegate.swift in Sources */,
+				22AAFF8A1ABB7E9100D71DEA /* NotificationActionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

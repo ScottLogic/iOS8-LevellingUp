@@ -57,7 +57,8 @@ extension AppComponent {
       AppComponent(name: "Alert View", category: .Fix, vcIdentifier: "AlertsViewVC"),
       AppComponent(name: "Popovers", category: .Fix, vcIdentifier: "PopoverVC"),
       AppComponent(name: "ActionSheet", category: .Fix, vcIdentifier: "ActionSheetVC"),
-      AppComponent(name: "CoreLocation Authorisation", category: .Fix, vcIdentifier: "LocationAuthorisationVC")
+      AppComponent(name: "CoreLocation Authorisation", category: .Fix, vcIdentifier: "LocationAuthorisationVC"),
+      AppComponent(name: "Notification Actions", category: .NewFeature, vcIdentifier: "NotificationActionsVC")
     ]
   }
 }
