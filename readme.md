@@ -9,9 +9,12 @@ apps work again, and some cool new features.
 ### Breaking Changes
 - Notification authorisations
 - Alert Views
+- Popovers
+- Action Sheets
+- Core Locaton authorisations
 
 ### Cool Newness
--
+- Notification Actions
 
 
 ## Me
