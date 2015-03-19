@@ -18,6 +18,7 @@
 		2279CBAC1ABA2F1A0009140F /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBAB1ABA2F1A0009140F /* AlertsViewController.swift */; };
 		2279CBAE1ABAC1CC0009140F /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBAD1ABAC1CC0009140F /* PopoverViewController.swift */; };
 		2279CBB11ABAE5610009140F /* PopoverContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBB01ABAE5610009140F /* PopoverContentViewController.swift */; };
+		2279CBB31ABB33B90009140F /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBB21ABB33B90009140F /* ActionSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		2279CBAB1ABA2F1A0009140F /* AlertsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		2279CBAD1ABAC1CC0009140F /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		2279CBB01ABAE5610009140F /* PopoverContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverContentViewController.swift; sourceTree = "<group>"; };
+		2279CBB21ABB33B90009140F /* ActionSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				2279CBA91AB9CE1F0009140F /* NotificationAuthorisationViewController.swift */,
 				2279CBAB1ABA2F1A0009140F /* AlertsViewController.swift */,
 				2279CBAD1ABAC1CC0009140F /* PopoverViewController.swift */,
+				2279CBB21ABB33B90009140F /* ActionSheetViewController.swift */,
 			);
 			name = Fixes;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2279CBB31ABB33B90009140F /* ActionSheetViewController.swift in Sources */,
 				2279CBAA1AB9CE1F0009140F /* NotificationAuthorisationViewController.swift in Sources */,
 				2279CBA71AB8CD3E0009140F /* AppComponents.swift in Sources */,
 				2279CBB11ABAE5610009140F /* PopoverContentViewController.swift in Sources */,

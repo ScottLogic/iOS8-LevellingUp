@@ -55,7 +55,8 @@ extension AppComponent {
     return [
       AppComponent(name: "Notification Authorisation", category: .Fix, vcIdentifier: "NotificationAuthorisationVC"),
       AppComponent(name: "Alert View", category: .Fix, vcIdentifier: "AlertsViewVC"),
-      AppComponent(name: "Popovers", category: .Fix, vcIdentifier: "PopoverVC")
+      AppComponent(name: "Popovers", category: .Fix, vcIdentifier: "PopoverVC"),
+      AppComponent(name: "ActionSheet", category: .Fix, vcIdentifier: "ActionSheetVC")
     ]
   }
 }
