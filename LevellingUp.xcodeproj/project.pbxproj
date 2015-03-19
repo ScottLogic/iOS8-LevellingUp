@@ -16,6 +16,8 @@
 		2279CBA71AB8CD3E0009140F /* AppComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBA61AB8CD3E0009140F /* AppComponents.swift */; };
 		2279CBAA1AB9CE1F0009140F /* NotificationAuthorisationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBA91AB9CE1F0009140F /* NotificationAuthorisationViewController.swift */; };
 		2279CBAC1ABA2F1A0009140F /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBAB1ABA2F1A0009140F /* AlertsViewController.swift */; };
+		2279CBAE1ABAC1CC0009140F /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBAD1ABAC1CC0009140F /* PopoverViewController.swift */; };
+		2279CBB11ABAE5610009140F /* PopoverContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBB01ABAE5610009140F /* PopoverContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		2279CBA61AB8CD3E0009140F /* AppComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponents.swift; sourceTree = "<group>"; };
 		2279CBA91AB9CE1F0009140F /* NotificationAuthorisationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAuthorisationViewController.swift; sourceTree = "<group>"; };
 		2279CBAB1ABA2F1A0009140F /* AlertsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		2279CBAD1ABAC1CC0009140F /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		2279CBB01ABAE5610009140F /* PopoverContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +135,20 @@
 		2279CBA81AB9CDF50009140F /* Fixes */ = {
 			isa = PBXGroup;
 			children = (
+				2279CBAF1ABAE5520009140F /* Aux */,
 				2279CBA91AB9CE1F0009140F /* NotificationAuthorisationViewController.swift */,
 				2279CBAB1ABA2F1A0009140F /* AlertsViewController.swift */,
+				2279CBAD1ABAC1CC0009140F /* PopoverViewController.swift */,
 			);
 			name = Fixes;
+			sourceTree = "<group>";
+		};
+		2279CBAF1ABAE5520009140F /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				2279CBB01ABAE5610009140F /* PopoverContentViewController.swift */,
+			);
+			name = Aux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +253,10 @@
 			files = (
 				2279CBAA1AB9CE1F0009140F /* NotificationAuthorisationViewController.swift in Sources */,
 				2279CBA71AB8CD3E0009140F /* AppComponents.swift in Sources */,
+				2279CBB11ABAE5610009140F /* PopoverContentViewController.swift in Sources */,
 				2279CBAC1ABA2F1A0009140F /* AlertsViewController.swift in Sources */,
 				2279CB861AB86E460009140F /* MasterViewController.swift in Sources */,
+				2279CBAE1ABAC1CC0009140F /* PopoverViewController.swift in Sources */,
 				2279CB841AB86E460009140F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

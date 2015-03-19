@@ -54,7 +54,8 @@ extension AppComponent {
   static func appStructure() -> [AppComponent] {
     return [
       AppComponent(name: "Notification Authorisation", category: .Fix, vcIdentifier: "NotificationAuthorisationVC"),
-      AppComponent(name: "Alert View", category: .Fix, vcIdentifier: "AlertsViewVC")
+      AppComponent(name: "Alert View", category: .Fix, vcIdentifier: "AlertsViewVC"),
+      AppComponent(name: "Popovers", category: .Fix, vcIdentifier: "PopoverVC")
     ]
   }
 }
