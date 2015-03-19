@@ -351,5 +351,46 @@
             </objects>
             <point key="canvasLocation" x="1332" y="280"/>
         </scene>
+        <!--LocationAuthorisation-->
+        <scene sceneID="frV-tg-XQG">
+            <objects>
+                <viewController storyboardIdentifier="LocationAuthorisationVC" title="LocationAuthorisation" id="Qvz-4c-LRc" customClass="CoreLocationAuthorisationViewController" customModule="LevellingUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nKd-zX-3rX"/>
+                        <viewControllerLayoutGuide type="bottom" id="xas-rv-Tuc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iQg-CD-Tqy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Authorisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jmd-Ym-ArT">
+                                <rect key="frame" x="16" y="20" width="568" height="71"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="l3K-Bw-5PM">
+                                <rect key="frame" x="0.0" y="99" width="600" height="501"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l3K-Bw-5PM" firstAttribute="leading" secondItem="iQg-CD-Tqy" secondAttribute="leading" id="1cx-mR-aXT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jmd-Ym-ArT" secondAttribute="trailing" id="7Wv-Oa-AJ4"/>
+                            <constraint firstItem="Jmd-Ym-ArT" firstAttribute="leading" secondItem="iQg-CD-Tqy" secondAttribute="leadingMargin" id="PYw-UZ-T2r"/>
+                            <constraint firstItem="l3K-Bw-5PM" firstAttribute="top" secondItem="Jmd-Ym-ArT" secondAttribute="bottom" constant="8" id="Qfk-le-utQ"/>
+                            <constraint firstAttribute="trailing" secondItem="l3K-Bw-5PM" secondAttribute="trailing" id="ZKa-32-0O7"/>
+                            <constraint firstItem="xas-rv-Tuc" firstAttribute="top" secondItem="l3K-Bw-5PM" secondAttribute="bottom" id="biH-uN-G7t"/>
+                            <constraint firstItem="Jmd-Ym-ArT" firstAttribute="top" secondItem="nKd-zX-3rX" secondAttribute="bottom" id="iJD-Bp-577"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="l3K-Bw-5PM" id="ecG-rA-w12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Va8-3c-1vG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2033" y="280"/>
+        </scene>
     </scenes>
 </document>
