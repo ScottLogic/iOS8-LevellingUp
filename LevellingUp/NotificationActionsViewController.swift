@@ -23,12 +23,17 @@ class NotificationActionsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
-    
+    // Request authorisation for local notifications
     let requestedTypes = UIUserNotificationType.Alert
     let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes, categories: nil)
     UIApplication.sharedApplication().registerUserNotificationSettings(settingsRequest)
     
+    // Handle local notifications being fired
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleLocalNotificationReceived:", name: localNotificationFiredKey, object: nil)
+  }
+  
+  deinit {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
   }
 
   @IBAction func handleAskMeLaterPressed(sender: AnyObject) {
@@ -42,6 +47,15 @@ class NotificationActionsViewController: UIViewController {
     
     // Schedule Notification
     UIApplication.sharedApplication().scheduleLocalNotification(notification)
+  }
+  
+  
+  // Notification handling
+  func handleLocalNotificationReceived(notification: NSNotification) {
+    if let userInfo = notification.userInfo,
+      let localNotification = userInfo["notification"] as? UILocalNotification {
+        lastAskedLabel.text = "You Answered!"
+    }
   }
 
 }

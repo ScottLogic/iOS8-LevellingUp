@@ -15,6 +15,7 @@
 //
 
 let userNotificationSettingsKey = "UserNotificationSettingsDidChange"
+let localNotificationFiredKey = "LocalNotificationFired"
 
 
 import UIKit
@@ -35,6 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
   // MARK: - Notification Settings
   func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
     NSNotificationCenter.defaultCenter().postNotificationName(userNotificationSettingsKey, object: self)
+  }
+  
+  // MARK: - Local notification fired
+  func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+    NSNotificationCenter.defaultCenter().postNotificationName(localNotificationFiredKey, object: self, userInfo: ["notification": notification])
   }
   
 }
