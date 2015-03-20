@@ -18,10 +18,30 @@ import UIKit
 
 class NotificationActionsViewController: UIViewController {
   
+  @IBOutlet weak var lastAskedLabel: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
+    
+    let requestedTypes = UIUserNotificationType.Alert
+    let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes, categories: nil)
+    UIApplication.sharedApplication().registerUserNotificationSettings(settingsRequest)
+    
+  }
+
+  @IBAction func handleAskMeLaterPressed(sender: AnyObject) {
+    // Cancel any existing notifications
+    UIApplication.sharedApplication().cancelAllLocalNotifications()
+    
+    // Create a new notification
+    let notification = UILocalNotification()
+    notification.fireDate = NSDate(timeIntervalSinceNow: 3)
+    notification.alertBody = "Asking you now"
+    
+    // Schedule Notification
+    UIApplication.sharedApplication().scheduleLocalNotification(notification)
   }
 
 }
