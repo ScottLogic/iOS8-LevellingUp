@@ -18,6 +18,10 @@ import UIKit
 
 class NotificationActionsViewController: UIViewController {
   
+  let notificationActionDemoString = "AskMeNotificationString"
+  let cancelNotificationString = "CancelNotificationString"
+  let askAgainNotificationString = "AskAgainNotificationString"
+  
   @IBOutlet weak var lastAskedLabel: UILabel!
   
   override func viewDidLoad() {
@@ -25,11 +29,13 @@ class NotificationActionsViewController: UIViewController {
     
     // Request authorisation for local notifications
     let requestedTypes = UIUserNotificationType.Alert
-    let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes, categories: nil)
+    let category = prepareNotificationCategory()
+    let settingsRequest = UIUserNotificationSettings(forTypes: requestedTypes, categories: [category])
     UIApplication.sharedApplication().registerUserNotificationSettings(settingsRequest)
     
     // Handle local notifications being fired
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleLocalNotificationReceived:", name: localNotificationFiredKey, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleNotificationAction:", name: localNotificationTriggeredActionKey, object: nil)
   }
   
   deinit {
@@ -44,6 +50,7 @@ class NotificationActionsViewController: UIViewController {
     let notification = UILocalNotification()
     notification.fireDate = NSDate(timeIntervalSinceNow: 3)
     notification.alertBody = "Asking you now"
+    notification.category = notificationActionDemoString
     
     // Schedule Notification
     UIApplication.sharedApplication().scheduleLocalNotification(notification)
@@ -52,10 +59,49 @@ class NotificationActionsViewController: UIViewController {
   
   // Notification handling
   func handleLocalNotificationReceived(notification: NSNotification) {
+    lastAskedLabel.text = "You Answered!"
+  }
+  
+  // Action handling
+  func handleNotificationAction(notification: NSNotification) {
     if let userInfo = notification.userInfo,
-      let localNotification = userInfo["notification"] as? UILocalNotification {
-        lastAskedLabel.text = "You Answered!"
+      let userNotification = userInfo["notification"] as? UILocalNotification,
+      let identifier = userInfo["identifier"] as? String {
+        switch identifier {
+        case cancelNotificationString:
+          lastAskedLabel.text = "You cancelled"
+        case askAgainNotificationString:
+          lastAskedLabel.text = "You restarted!"
+          handleAskMeLaterPressed(lastAskedLabel)
+        default:
+          break
+        }
     }
+  }
+    
+  
+  // MARK:- Utiltiies
+  private func prepareNotificationCategory() -> UIUserNotificationCategory {
+    let cancelAction = UIMutableUserNotificationAction()
+    cancelAction.identifier = cancelNotificationString
+    cancelAction.destructive = true
+    cancelAction.title = "Cancel"
+    // Should the app be started in the foreground to handle the request?
+    cancelAction.activationMode = .Background
+    cancelAction.authenticationRequired = false
+    
+    let askAgainAction = UIMutableUserNotificationAction()
+    askAgainAction.identifier = askAgainNotificationString
+    askAgainAction.destructive = false
+    askAgainAction.title = "AskAgain?"
+    askAgainAction.activationMode = .Foreground
+    askAgainAction.authenticationRequired = true
+    
+    
+    let category = UIMutableUserNotificationCategory()
+    category.identifier = notificationActionDemoString
+    category.setActions([cancelAction, askAgainAction], forContext: .Minimal)
+    return category
   }
 
 }
