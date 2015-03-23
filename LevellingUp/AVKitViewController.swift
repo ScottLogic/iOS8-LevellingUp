@@ -27,6 +27,12 @@ class AVKitViewController: AVPlayerViewController {
     
     let url = NSBundle.mainBundle().URLForResource("countdown_new", withExtension: "mov")
     player = AVPlayer(URL: url)
+    
+    // Some configuration
+    showsPlaybackControls = true
+    
+    // AVFoundation pipeline controls
+    player.play()
   }
 
 }

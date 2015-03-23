@@ -455,7 +455,9 @@
         <!--AVKitViewController-->
         <scene sceneID="zYR-ge-Irl">
             <objects>
-                <avPlayerViewController storyboardIdentifier="AVKitVC" title="AVKitViewController" videoGravity="AVLayerVideoGravityResizeAspect" id="qLq-Kc-oeX" customClass="AVKitViewController" customModule="LevellingUp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <avPlayerViewController storyboardIdentifier="AVKitVC" title="AVKitViewController" videoGravity="AVLayerVideoGravityResizeAspect" id="qLq-Kc-oeX" customClass="AVKitViewController" customModule="LevellingUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                </avPlayerViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EO9-Ov-Bli" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-36" y="-1488"/>
