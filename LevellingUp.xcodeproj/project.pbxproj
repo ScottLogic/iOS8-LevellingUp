@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220FF7E91AC5B5010031F2CF /* BetterMovingAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7E81AC5B5010031F2CF /* BetterMovingAverage.swift */; };
+		220FF7EB1AC5B5120031F2CF /* MovingAverageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7EA1AC5B5120031F2CF /* MovingAverageProtocol.swift */; };
+		220FF7ED1AC5B5270031F2CF /* NaiveMovingAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7EC1AC5B5270031F2CF /* NaiveMovingAverage.swift */; };
+		220FF7EF1AC5B55B0031F2CF /* MovingAverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7EE1AC5B55B0031F2CF /* MovingAverageTests.swift */; };
 		223B118C1AC03A360070610A /* AVKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B118B1AC03A360070610A /* AVKitViewController.swift */; };
 		223B118F1AC06E9E0070610A /* countdown_new.mov in Resources */ = {isa = PBXBuildFile; fileRef = 223B118E1AC06E9E0070610A /* countdown_new.mov */; };
 		2279CB841AB86E460009140F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CB831AB86E460009140F /* AppDelegate.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220FF7E81AC5B5010031F2CF /* BetterMovingAverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterMovingAverage.swift; sourceTree = "<group>"; };
+		220FF7EA1AC5B5120031F2CF /* MovingAverageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingAverageProtocol.swift; sourceTree = "<group>"; };
+		220FF7EC1AC5B5270031F2CF /* NaiveMovingAverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaiveMovingAverage.swift; sourceTree = "<group>"; };
+		220FF7EE1AC5B55B0031F2CF /* MovingAverageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingAverageTests.swift; sourceTree = "<group>"; };
 		223B118B1AC03A360070610A /* AVKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVKitViewController.swift; sourceTree = "<group>"; };
 		223B118E1AC06E9E0070610A /* countdown_new.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = countdown_new.mov; sourceTree = "<group>"; };
 		2279CB7E1AB86E460009140F /* LevellingUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevellingUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220FF7E11AC5B46D0031F2CF /* New Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				220FF7EE1AC5B55B0031F2CF /* MovingAverageTests.swift */,
+			);
+			name = "New Stuff";
+			sourceTree = "<group>";
+		};
+		220FF7E71AC5B4F00031F2CF /* Test Performance */ = {
+			isa = PBXGroup;
+			children = (
+				220FF7E81AC5B5010031F2CF /* BetterMovingAverage.swift */,
+				220FF7EA1AC5B5120031F2CF /* MovingAverageProtocol.swift */,
+				220FF7EC1AC5B5270031F2CF /* NaiveMovingAverage.swift */,
+			);
+			name = "Test Performance";
+			sourceTree = "<group>";
+		};
 		223B118D1AC03ADE0070610A /* Aux */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +155,7 @@
 		2279CB981AB86E460009140F /* LevellingUpTests */ = {
 			isa = PBXGroup;
 			children = (
+				220FF7E11AC5B46D0031F2CF /* New Stuff */,
 				2279CB9B1AB86E460009140F /* LevellingUpTests.swift */,
 				2279CB991AB86E460009140F /* Supporting Files */,
 			);
@@ -175,6 +202,7 @@
 		22AAFF881ABB7E4400D71DEA /* New Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				220FF7E71AC5B4F00031F2CF /* Test Performance */,
 				223B118D1AC03ADE0070610A /* Aux */,
 				22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */,
 				223B118B1AC03A360070610A /* AVKitViewController.swift */,
@@ -283,8 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220FF7EB1AC5B5120031F2CF /* MovingAverageProtocol.swift in Sources */,
 				2279CBB31ABB33B90009140F /* ActionSheetViewController.swift in Sources */,
 				2279CBAA1AB9CE1F0009140F /* NotificationAuthorisationViewController.swift in Sources */,
+				220FF7ED1AC5B5270031F2CF /* NaiveMovingAverage.swift in Sources */,
 				2279CBA71AB8CD3E0009140F /* AppComponents.swift in Sources */,
 				2279CBB11ABAE5610009140F /* PopoverContentViewController.swift in Sources */,
 				2279CBAC1ABA2F1A0009140F /* AlertsViewController.swift in Sources */,
@@ -292,6 +322,7 @@
 				2279CBB51ABB70430009140F /* CoreLocationAuthorisationViewController.swift in Sources */,
 				2279CBAE1ABAC1CC0009140F /* PopoverViewController.swift in Sources */,
 				223B118C1AC03A360070610A /* AVKitViewController.swift in Sources */,
+				220FF7E91AC5B5010031F2CF /* BetterMovingAverage.swift in Sources */,
 				2279CB841AB86E460009140F /* AppDelegate.swift in Sources */,
 				22AAFF8A1ABB7E9100D71DEA /* NotificationActionsViewController.swift in Sources */,
 			);
@@ -302,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2279CB9C1AB86E460009140F /* LevellingUpTests.swift in Sources */,
+				220FF7EF1AC5B55B0031F2CF /* MovingAverageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
