@@ -59,7 +59,8 @@ extension AppComponent {
       AppComponent(name: "ActionSheet", category: .Fix, vcIdentifier: "ActionSheetVC"),
       AppComponent(name: "CoreLocation Authorisation", category: .Fix, vcIdentifier: "LocationAuthorisationVC"),
       AppComponent(name: "Notification Actions", category: .NewFeature, vcIdentifier: "NotificationActionsVC"),
-      AppComponent(name: "AVKit", category: .NewFeature, vcIdentifier: "AVKitVC")
+      AppComponent(name: "AVKit", category: .NewFeature, vcIdentifier: "AVKitVC"),
+      AppComponent(name: "Async Testing", category: .NewFeature, vcIdentifier: "AsyncTestingVC")
     ]
   }
 }

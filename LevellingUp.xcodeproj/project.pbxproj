@@ -11,6 +11,9 @@
 		220FF7EB1AC5B5120031F2CF /* MovingAverageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7EA1AC5B5120031F2CF /* MovingAverageProtocol.swift */; };
 		220FF7ED1AC5B5270031F2CF /* NaiveMovingAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7EC1AC5B5270031F2CF /* NaiveMovingAverage.swift */; };
 		220FF7EF1AC5B55B0031F2CF /* MovingAverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7EE1AC5B55B0031F2CF /* MovingAverageTests.swift */; };
+		220FF7F21AC5CA1E0031F2CF /* AsyncTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7F11AC5CA1E0031F2CF /* AsyncTestingViewController.swift */; };
+		220FF7F41AC5CA4C0031F2CF /* HorseRaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7F31AC5CA4C0031F2CF /* HorseRaceController.swift */; };
+		220FF7F61AC5CB6E0031F2CF /* AsyncTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FF7F51AC5CB6E0031F2CF /* AsyncTestingTests.swift */; };
 		223B118C1AC03A360070610A /* AVKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B118B1AC03A360070610A /* AVKitViewController.swift */; };
 		223B118F1AC06E9E0070610A /* countdown_new.mov in Resources */ = {isa = PBXBuildFile; fileRef = 223B118E1AC06E9E0070610A /* countdown_new.mov */; };
 		2279CB841AB86E460009140F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CB831AB86E460009140F /* AppDelegate.swift */; };
@@ -44,6 +47,9 @@
 		220FF7EA1AC5B5120031F2CF /* MovingAverageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingAverageProtocol.swift; sourceTree = "<group>"; };
 		220FF7EC1AC5B5270031F2CF /* NaiveMovingAverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaiveMovingAverage.swift; sourceTree = "<group>"; };
 		220FF7EE1AC5B55B0031F2CF /* MovingAverageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingAverageTests.swift; sourceTree = "<group>"; };
+		220FF7F11AC5CA1E0031F2CF /* AsyncTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTestingViewController.swift; sourceTree = "<group>"; };
+		220FF7F31AC5CA4C0031F2CF /* HorseRaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorseRaceController.swift; sourceTree = "<group>"; };
+		220FF7F51AC5CB6E0031F2CF /* AsyncTestingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTestingTests.swift; sourceTree = "<group>"; };
 		223B118B1AC03A360070610A /* AVKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVKitViewController.swift; sourceTree = "<group>"; };
 		223B118E1AC06E9E0070610A /* countdown_new.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = countdown_new.mov; sourceTree = "<group>"; };
 		2279CB7E1AB86E460009140F /* LevellingUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevellingUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				220FF7EE1AC5B55B0031F2CF /* MovingAverageTests.swift */,
+				220FF7F51AC5CB6E0031F2CF /* AsyncTestingTests.swift */,
 			);
 			name = "New Stuff";
 			sourceTree = "<group>";
@@ -106,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				223B118E1AC06E9E0070610A /* countdown_new.mov */,
+				220FF7F31AC5CA4C0031F2CF /* HorseRaceController.swift */,
 			);
 			name = Aux;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 				223B118D1AC03ADE0070610A /* Aux */,
 				22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */,
 				223B118B1AC03A360070610A /* AVKitViewController.swift */,
+				220FF7F11AC5CA1E0031F2CF /* AsyncTestingViewController.swift */,
 			);
 			name = "New Stuff";
 			sourceTree = "<group>";
@@ -315,8 +324,10 @@
 				2279CBB31ABB33B90009140F /* ActionSheetViewController.swift in Sources */,
 				2279CBAA1AB9CE1F0009140F /* NotificationAuthorisationViewController.swift in Sources */,
 				220FF7ED1AC5B5270031F2CF /* NaiveMovingAverage.swift in Sources */,
+				220FF7F41AC5CA4C0031F2CF /* HorseRaceController.swift in Sources */,
 				2279CBA71AB8CD3E0009140F /* AppComponents.swift in Sources */,
 				2279CBB11ABAE5610009140F /* PopoverContentViewController.swift in Sources */,
+				220FF7F21AC5CA1E0031F2CF /* AsyncTestingViewController.swift in Sources */,
 				2279CBAC1ABA2F1A0009140F /* AlertsViewController.swift in Sources */,
 				2279CB861AB86E460009140F /* MasterViewController.swift in Sources */,
 				2279CBB51ABB70430009140F /* CoreLocationAuthorisationViewController.swift in Sources */,
@@ -334,6 +345,7 @@
 			files = (
 				2279CB9C1AB86E460009140F /* LevellingUpTests.swift in Sources */,
 				220FF7EF1AC5B55B0031F2CF /* MovingAverageTests.swift in Sources */,
+				220FF7F61AC5CB6E0031F2CF /* AsyncTestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
