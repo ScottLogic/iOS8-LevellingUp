@@ -65,7 +65,6 @@ class NotificationActionsViewController: UIViewController {
   // Action handling
   func handleNotificationAction(notification: NSNotification) {
     if let userInfo = notification.userInfo,
-      let userNotification = userInfo["notification"] as? UILocalNotification,
       let identifier = userInfo["identifier"] as? String {
         switch identifier {
         case cancelNotificationString:
