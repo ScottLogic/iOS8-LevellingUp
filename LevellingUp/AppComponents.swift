@@ -55,13 +55,14 @@ extension AppComponent {
     return [
       AppComponent(name: "Notification Authorisation", category: .Fix, vcIdentifier: "NotificationAuthorisationVC"),
       AppComponent(name: "Alert View", category: .Fix, vcIdentifier: "AlertsViewVC"),
-      AppComponent(name: "Popovers", category: .Fix, vcIdentifier: "PopoverVC"),
       AppComponent(name: "ActionSheet", category: .Fix, vcIdentifier: "ActionSheetVC"),
+      AppComponent(name: "Popovers", category: .Fix, vcIdentifier: "PopoverVC"),
       AppComponent(name: "CoreLocation Authorisation", category: .Fix, vcIdentifier: "LocationAuthorisationVC"),
-      AppComponent(name: "Notification Actions", category: .NewFeature, vcIdentifier: "NotificationActionsVC"),
+      AppComponent(name: "Link to Settings", category: .NewFeature, vcIdentifier: "NotificationAuthorisationVC"),
       AppComponent(name: "AVKit", category: .NewFeature, vcIdentifier: "AVKitVC"),
-      AppComponent(name: "Async Testing", category: .NewFeature, vcIdentifier: "AsyncTestingVC"),
-      AppComponent(name: "Rotation", category: .NewFeature, vcIdentifier: "RotationVC")
+      AppComponent(name: "Notification Actions", category: .NewFeature, vcIdentifier: "NotificationActionsVC"),
+      AppComponent(name: "Rotation", category: .NewFeature, vcIdentifier: "RotationVC"),
+      AppComponent(name: "Async Testing", category: .NewFeature, vcIdentifier: "AsyncTestingVC")
     ]
   }
 }
