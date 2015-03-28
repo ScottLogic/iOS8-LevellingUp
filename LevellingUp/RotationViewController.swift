@@ -22,6 +22,7 @@ class RotationViewController: UIViewController {
   @IBOutlet var monkeyLabels: [UILabel]!
   
   override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
     let targetTransform = coordinator.targetTransform()
     if !CGAffineTransformIsIdentity(targetTransform) {
       coordinator.animateAlongsideTransition({
