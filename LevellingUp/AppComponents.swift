@@ -60,7 +60,8 @@ extension AppComponent {
       AppComponent(name: "CoreLocation Authorisation", category: .Fix, vcIdentifier: "LocationAuthorisationVC"),
       AppComponent(name: "Notification Actions", category: .NewFeature, vcIdentifier: "NotificationActionsVC"),
       AppComponent(name: "AVKit", category: .NewFeature, vcIdentifier: "AVKitVC"),
-      AppComponent(name: "Async Testing", category: .NewFeature, vcIdentifier: "AsyncTestingVC")
+      AppComponent(name: "Async Testing", category: .NewFeature, vcIdentifier: "AsyncTestingVC"),
+      AppComponent(name: "Rotation", category: .NewFeature, vcIdentifier: "RotationVC")
     ]
   }
 }

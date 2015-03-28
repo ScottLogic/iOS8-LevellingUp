@@ -30,6 +30,7 @@
 		2279CBB31ABB33B90009140F /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBB21ABB33B90009140F /* ActionSheetViewController.swift */; };
 		2279CBB51ABB70430009140F /* CoreLocationAuthorisationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279CBB41ABB70430009140F /* CoreLocationAuthorisationViewController.swift */; };
 		22AAFF8A1ABB7E9100D71DEA /* NotificationActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */; };
+		22B45B751AC6D98300BDB4CC /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B45B741AC6D98300BDB4CC /* RotationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		2279CBB21ABB33B90009140F /* ActionSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
 		2279CBB41ABB70430009140F /* CoreLocationAuthorisationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationAuthorisationViewController.swift; sourceTree = "<group>"; };
 		22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationActionsViewController.swift; sourceTree = "<group>"; };
+		22B45B741AC6D98300BDB4CC /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */,
 				223B118B1AC03A360070610A /* AVKitViewController.swift */,
 				220FF7F11AC5CA1E0031F2CF /* AsyncTestingViewController.swift */,
+				22B45B741AC6D98300BDB4CC /* RotationViewController.swift */,
 			);
 			name = "New Stuff";
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				2279CBB31ABB33B90009140F /* ActionSheetViewController.swift in Sources */,
 				2279CBAA1AB9CE1F0009140F /* NotificationAuthorisationViewController.swift in Sources */,
 				220FF7ED1AC5B5270031F2CF /* NaiveMovingAverage.swift in Sources */,
+				22B45B751AC6D98300BDB4CC /* RotationViewController.swift in Sources */,
 				220FF7F41AC5CA4C0031F2CF /* HorseRaceController.swift in Sources */,
 				2279CBA71AB8CD3E0009140F /* AppComponents.swift in Sources */,
 				2279CBB11ABAE5610009140F /* PopoverContentViewController.swift in Sources */,
