@@ -17,14 +17,7 @@
 
 import UIKit
 
-class AlertsViewController: UIViewController {
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
-  }
-  
+class AlertsViewController: UIViewController {  
   
   @IBAction func handleAlertMePressed(sender: AnyObject) {
     let alert = UIAlertController(title: "Alert",

@@ -194,8 +194,8 @@
 				2279CBAF1ABAE5520009140F /* Aux */,
 				2279CBA91AB9CE1F0009140F /* NotificationAuthorisationViewController.swift */,
 				2279CBAB1ABA2F1A0009140F /* AlertsViewController.swift */,
-				2279CBAD1ABAC1CC0009140F /* PopoverViewController.swift */,
 				2279CBB21ABB33B90009140F /* ActionSheetViewController.swift */,
+				2279CBAD1ABAC1CC0009140F /* PopoverViewController.swift */,
 				2279CBB41ABB70430009140F /* CoreLocationAuthorisationViewController.swift */,
 			);
 			name = Fixes;

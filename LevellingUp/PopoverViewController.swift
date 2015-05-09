@@ -17,23 +17,19 @@
 import UIKit
 
 class PopoverViewController: UIViewController, UIPopoverPresentationControllerDelegate {
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
-  }
 
   @IBAction func handlePopoverPressed(sender: UIView) {
     let popoverVC = storyboard?.instantiateViewControllerWithIdentifier("PopoverContentVC") as! UIViewController
     popoverVC.modalPresentationStyle = .Popover
+    
+    presentViewController(popoverVC, animated: true, completion: nil)
+    
     if let popoverController = popoverVC.popoverPresentationController {
       popoverController.sourceView = sender
       popoverController.sourceRect = sender.bounds
       popoverController.permittedArrowDirections = .Any
       popoverController.delegate = self
     }
-    presentViewController(popoverVC, animated: true, completion: nil)
   }
   
   
