@@ -141,8 +141,8 @@
 		2279CB801AB86E460009140F /* LevellingUp */ = {
 			isa = PBXGroup;
 			children = (
-				22AAFF881ABB7E4400D71DEA /* New Stuff */,
 				2279CBA81AB9CDF50009140F /* Fixes */,
+				22AAFF881ABB7E4400D71DEA /* New Stuff */,
 				2279CBA51AB8CD070009140F /* Data */,
 				2279CB831AB86E460009140F /* AppDelegate.swift */,
 				2279CB851AB86E460009140F /* MasterViewController.swift */,
