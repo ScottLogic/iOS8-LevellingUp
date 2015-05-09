@@ -212,12 +212,12 @@
 		22AAFF881ABB7E4400D71DEA /* New Stuff */ = {
 			isa = PBXGroup;
 			children = (
-				220FF7E71AC5B4F00031F2CF /* Test Performance */,
 				223B118D1AC03ADE0070610A /* Aux */,
-				22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */,
 				223B118B1AC03A360070610A /* AVKitViewController.swift */,
-				220FF7F11AC5CA1E0031F2CF /* AsyncTestingViewController.swift */,
 				22B45B741AC6D98300BDB4CC /* RotationViewController.swift */,
+				22AAFF891ABB7E9100D71DEA /* NotificationActionsViewController.swift */,
+				220FF7F11AC5CA1E0031F2CF /* AsyncTestingViewController.swift */,
+				220FF7E71AC5B4F00031F2CF /* Test Performance */,
 			);
 			name = "New Stuff";
 			sourceTree = "<group>";
